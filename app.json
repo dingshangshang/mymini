@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/customForm/customForm",
     "pages/methods/myModal",
     "pages/methods/message",
     "pages/customLayout/numberControll",
@@ -10,7 +11,6 @@
     "pages/methods/format",
     "pages/methods/collapse",
     "pages/methods/assign",
-    "pages/customForm/customForm",
     "pages/customCard/customCard",
     "pages/customLayout/refresh",
     "pages/customLayout/navBar2",

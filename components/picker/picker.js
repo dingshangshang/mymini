@@ -2,15 +2,6 @@ const app = getApp()
 
 Component({
   properties: {
-    pickData: {
-      type: Object,
-      value: {},
-      observer: function(newVal) {
-        if (typeof newVal === 'object') {
-          this.setData({listData: Object.values(newVal)})
-        }
-      }
-    },
     sureStyle: {
       type: String,
       value: 'sure'
@@ -51,13 +42,9 @@ Component({
 
   },
   methods: {
-    _closePicker () {
-      let {pickeDate} = this.data
-      this.triggerEvent('close', pickeDate)
-      this.setData({isOpen: false})
-    },
-    setListData(list,val=null){ //重新设置下拉框数据和设置选中项
-      var length=list.length;
+    init(list,val=null){ //重新设置下拉框数据和设置选中项
+      console.log(list);
+      var that=this;
       var value=[];
       let pickeDate = [];
       for(var x=0;x<list.length;x++)//默认全部选中第一个
@@ -66,17 +53,20 @@ Component({
         value.push(0);
         pickeDate.push(item[0]);
       }
-      
       if(val!=null)
       {
-        vals=val.split(",");
-        valIndexList=[];
+        console.log(val);
+        val=val+'';
+        var vals=val.split(",");
         for(var i=0;i<list.length;i++)
         {
           var item=list[i];
           for(var a=0;a<item.length;a++)
           {
-            if(item[a].id==val[i])
+            console.log(item);
+            console.log("第一个"+item[a].id);
+            console.log("第二个"+vals[i]);
+            if(item[a].id==vals[i])
             {
               pickeDate[i]=item[a];
               value[i]=a;
@@ -84,16 +74,22 @@ Component({
           }
         }
       }
-      this.setData({
+      console.log(value);
+      that.setData({
         pickeDate:pickeDate,
         listData:list,
         value:value
       });
     },
+    _closePicker () {
+      let {pickeDate} = this.data
+      this.triggerEvent('close', pickeDate)
+      this.setData({isOpen: false})
+    },
     _bindChange (e) {
       const val = e.detail.value
       let {pickeDate} = this.data
-      Object.values(this.data.pickData).forEach((item, i) => {
+      Object.values(this.data.listData).forEach((item, i) => {
         pickeDate[i] = item[val[i]]
       })
       // console.log(pickeDate);

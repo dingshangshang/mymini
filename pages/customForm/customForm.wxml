@@ -51,8 +51,8 @@
     <view class="line"></view>
     <view class="form-control">
       <view class="form-control-t">picker组</view>
-      <view class="form-control-c" data-index="{{index}}" bindtap="_openPick" data-type="2" data-value="{{item.id}}">
-          {{item.id!=null?item.name:"请选择年龄"}}
+      <view class="form-control-c" data-index="{{index}}" bindtap="_openPick" data-type="2" data-value="{{item.age}}">
+          {{item.age!=null?item.age_name:"请选择年龄"}}
       </view>
     </view>
   </block>

@@ -8,17 +8,6 @@ Page(Object.assign({
       {},
       {}
     ],
-
-    //存放下拉框相关数据
-    listData: {},
-    openPicker: false,
-    listData: [
-      [{
-        id: '',
-        name: '请选择'
-      }],
-    ],
-    value: ''
   },
   onLoad() {
     var that = this;
@@ -33,12 +22,9 @@ Page(Object.assign({
     let data = e.detail
     var index = that.data.index;
     var type = that.data.type;
-    console.log(e.detail)
     this.setData({
       openPicker: false,
     })
-    console.log();
-    console.log("点击确定");
     if (data != null && data.length > 0) {
       var list = that.data.list;
       switch (type) {
@@ -50,7 +36,8 @@ Page(Object.assign({
           break;
           case "2":
             var age=that.data.age;
-            age[index]=data[0];
+            age[index].age=data[0].id;
+            age[index].age_name=data[0].name;
             that.setData({
               age: age,
             });
@@ -74,12 +61,10 @@ Page(Object.assign({
       type: type,
       index: index
     });
-    console.log(type);
     //请求下拉框数据
     switch (type) {
       case "1":
-      that.setData({
-        listData: [
+        that.selectComponent('#picker').init([
           [{
             id: '',
             name: '请选择性别'
@@ -90,14 +75,12 @@ Page(Object.assign({
             id: 2,
             name: '女'
           }],
-        ]
-      },value);
+        ],value);
         break;
         case "2":
-          console.log(value);
-        that.setData({
-          listData: [
-            [{
+          that.selectComponent('#picker').init(
+           [
+             [{
               id: '',
               name: '请选择年龄'
             }, {
@@ -106,9 +89,8 @@ Page(Object.assign({
             }, {
               id: 2,
               name: '30'
-            }],
-          ]
-        },value);
+            }]
+          ],value);
           break;
     }
     this.setData({
