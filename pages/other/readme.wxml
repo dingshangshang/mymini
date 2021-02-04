@@ -1,0 +1,18 @@
+<layout pageName="一些说明">
+  <view slot="slotbody">
+    <view class="page">
+      <view class="m-card-top">1、关于layout组件和navBar组件</view>
+      <view class="m-card">
+        这俩就是父子关系，我把navBar组件封装到了layout组件中，主要由于微信小程序不知道slot嵌套，所以除了列表页使用了layout组件，其它页面都是单独使用navBar组件，可自定义头部
+      </view>
+      <view class="m-card-top">2、关于console.log</view>
+      <view class="m-card">
+        到处都是，我是为了方便调试，建议项目开发完成后再删除，此处就不删除了，便于调试
+      </view>
+      <view class="m-card-top">3、关于图标</view>
+      <view class="m-card">
+        我用的是阿里云图标
+      </view>
+    </view>
+  </view>
+</layout>

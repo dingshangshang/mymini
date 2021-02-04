@@ -1,0 +1,7 @@
+<!--pages/components/numberControl/numberControl.wxml-->
+<view class="numberControl-frame">
+  <view class="numberControl-frame-sub numberControl-frame-btn {{number>1?'active >':''}}" bindtap="subtraction">-</view>
+  <input value="{{number}}" bindinput='numberchange'/>
+  <view class="numberControl-frame-add numberControl-frame-btn active" bindtap="add">+</view>
+</view>
+

@@ -1,0 +1,16 @@
+<view class="xnjk-modal" wx:if="{{show}}">
+  <view class="modal-dialog" style='height:{{height}}rpx!important;'>
+    <view class="modal-header position-relative">
+      {{title}}
+    </view>
+    <view class="modal-body" style="height:calc({{height}}rpx - 80rpx((showBtn?' - 90rpx':''))); font-size:34rpx;">
+      <slot></slot>
+    </view>
+    <block wx:if="{{showBtn}}">
+      <view class="modal-footer">
+        <view bindtap="close" class="closebtn">取消</view>
+        <view bindtap="sure" class="surebtn">确定</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+.pcolor{ 
+  color: blue;
+}
+.display-flex{
+  display:flex;
+  flex-wrap: wrap;
+}
+.br{
+  border-radius: 6px;
+}
+.position-relative{
+  position: relative;
+}
+.font-size-20{
+  font-size:20rpx;
+}
+.font-size-24{
+  font-size:24rpx;
+}
+.font-size-26{
+  font-size:26rpx;
+}
+.font-size-28{
+  font-size:28rpx;
+}
+.font-size-30{
+  font-size:30rpx;
+}
+.fr {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mt-5 {
+  margin-top: 5rpx;
+}
+
+.mt-10 {
+  margin-top: 10rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.mt-25 {
+  margin-top: 25rpx;
+}
+
+.mt-30 {
+  margin-top: 30rpx;
+}
+.ml-10{
+  margin-left: 10rpx;
+}
+.ml-20{
+  margin-left: 20rpx;
+}
+.ml-30{
+  margin-left: 30rpx;
+}
+.mr-10 {
+  margin-right: 10rpx;
+}

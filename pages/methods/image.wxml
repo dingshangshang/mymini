@@ -1,0 +1,5 @@
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<nav-bar pageName="图片流在小程序的显示" />
+<view class="page">
+  <img src="{{url}}" alt=""/>
+</view>

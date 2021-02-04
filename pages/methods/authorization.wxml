@@ -1,0 +1,7 @@
+<!-- <nav-bar page-name="授权" showHome="{{true}}"></nav-bar> -->
+<view class="page-hunger">
+  <view class="login-content">
+    <view class="login-title">授权可以使用更完整的功能</view>
+    <view class="m-btn" bindtap="openSetting">一键授权</view>
+  </view>
+</view>

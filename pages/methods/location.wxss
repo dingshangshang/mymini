@@ -1,0 +1,5 @@
+/* pages/methods/location.wxss */
+.location{
+  line-height: 60rpx;
+  background-color: white;
+}

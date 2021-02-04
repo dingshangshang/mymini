@@ -1,0 +1,29 @@
+<nav-bar pageName="数量加减" />
+<view class="m-card-top">一个</view>
+<view class="m-card-normal">
+  <number-control id="numbercontrol1" bind:numberChangeBind="numberChangeBind1" number="{{number}}" />
+</view>
+
+<view class="m-card-top">循环多个</view>
+<view class="m-card-normal">
+  <number-control class="mt-20" wx:for="{{users}}" id="numbercontrol2" bindcustomevent="numberChangeBind2"
+    index="{{index}}" number="{{item.age}}" />
+</view>
+
+<view class="m-card-top">多个循环多个</view>
+<view class="m-card-normal">
+  <block wx:for="{{department}}">
+    <view class="mt-30">
+      <number-control id="numbercontrol3-{{index}}" bindcustomevent="numberChangeBind3" index="{{index}}"
+        number="{{item.number}}" />
+      <view class="ml-30">
+        <block wx:for="{{item.users}}" wx:for-index="userindex" wx:for-item="useritem">
+          <view class="mt-30">
+            <number-control id="numbercontrol3-{{index}}-{{userindex}}" bindcustomevent="numberChangeBind3"
+              index="index,{{userindex}}" number="{{useritem.age}}" />
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

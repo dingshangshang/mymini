@@ -1,0 +1,5 @@
+<nav-bar pageName="错误提示、成功提示、警示框" />
+<view class="m-btn-success mt-30" bindtap="click1">成功提示</view>
+<view class="m-btn-success mt-30" bindtap="click2">错误提示</view>
+<view class="m-btn-success mt-30" bindtap="click3">警示框</view>
+<view class="m-btn-success mt-30" bindtap="click4">点我打开弹窗</view>

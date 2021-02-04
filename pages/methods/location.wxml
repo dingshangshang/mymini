@@ -1,0 +1,10 @@
+<nav-bar pageName="获取当前定位" />
+<view class="m-tip">如果拒绝授权，将会跳转到授权页面</view>
+<view class="location" bindtap="getAddress">
+  <i class="iconfont icon-dingwei"></i>
+{{address}}
+</view>
+<view class="location">{{a.address}}</view>
+<view class="location">{{a.name}}</view>
+<view class="location">{{a.latitude}}</view>
+<view class="location">{{a.longitude}}</view>

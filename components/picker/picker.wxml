@@ -1,0 +1,40 @@
+<view class="m-modal" wx:if="{{isOpen}}">
+  <view class="modal-dialog" style='height:600rpx;'>
+    <view class="modal-header position-relative">
+      {{title}}
+      <view class="close" bindtap="_closePicker"><i class="iconfont icon-guanbi black"></i></view>
+    </view>
+    <view class="modal-body" style="height:calc(100% - 200rpx); font-size:34rpx;">
+      <!-- <picker-view  value="{{value}}" bindchange="bindChange">
+        <picker-view-column style="flex:0 0 50%">
+          <view wx:for="{{days}}" style="line-height: 30px;text-align: center;">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column style="flex:0 0 20%">
+          <view wx:for="{{hours}}" style="line-height: 30px;text-align: center;">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column style="flex:0 0 30%">
+          <view wx:for="{{minutes}}" style="line-height: 30px;text-align: center;">{{item}} 
+            <text wx:if="{{urgent==1}}" style="color:red;">加急</text>
+          </view>
+        </picker-view-column>
+      </picker-view> -->
+      <picker-view 
+      indicator-style="height: 40rpx;" 
+      style="width: 100%; height:calc(100%);"
+      value="{{value}}" 
+      bindchange="_bindChange"
+      indicator-style="{{indicatorStyle}}"
+      mask-style="{{maskStyle}}"
+    >
+      <picker-view-column wx:for="{{listData}}" wx:for-index="idx" wx:key="*this">
+        <view wx:for="{{item}}" wx:for-item="less" wx:for-index="idx" wx:key="*this"  style="line-height: 68rpx;text-align: center;">
+          {{less.name}}
+        </view>
+      </picker-view-column>
+    </picker-view>
+    </view>
+    <view class="modal-footer">
+      <view class='m-btn' bindtap="_surePicker">确定</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<nav-bar haveContent="{{true}}">
+  <view slot="slottitleNav">
+    啦啦啦👉 <i class="iconfont icon-zhuye"></i>
+  </view>
+</nav-bar>
+<view class="page">
+  在下面写各种内容吧
+</view>

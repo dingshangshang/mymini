@@ -1,0 +1,38 @@
+<nav-bar pageName="收折" />
+<view class="m-collapses">
+  <view class="m-collapses-item">
+    <view class="m-collapses-title" bindtap="toggle" data-name="content1">
+      点我展开内容1
+      <i class="iconfont fr {{content1?'icon-zhankai':'icon-shouqi'}}"></i>
+    </view>
+    <view class="m-collapses-content" wx:if="{{content1}}">
+      <view>内容1</view>
+      <view>内容2</view>
+      <view>内容3</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="m-collapses-item" bindtap="toggle" data-name="content2">
+    <view class="m-collapses-title">
+      点我展开内容2
+      <i class="iconfont fr {{content2?'icon-zhankai':'icon-shouqi'}}"></i>
+    </view>
+    <view class="m-collapses-content" wx:if="{{content2}}">
+      <view>内容1</view>
+      <view>内容2</view>
+      <view>内容3</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="m-collapses-item" bindtap="toggle" data-name="content3">
+    <view class="m-collapses-title">
+      点我展开内容3
+      <i class="iconfont fr {{content3?'icon-zhankai':'icon-shouqi'}}"></i>
+    </view>
+    <view class="m-collapses-content" wx:if="{{content3}}">
+      <view>内容1</view>
+      <view>内容2</view>
+      <view>内容3</view>
+    </view>
+  </view>
+</view>

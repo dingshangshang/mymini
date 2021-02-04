@@ -1,0 +1,22 @@
+@import "/icon/iconfont.wxss";
+@import "/utils/common.wxss";
+@import "/utils/style.wxss";
+
+/* 这里打算放置一些其它关系不大的自定义公共样式start */
+.m-card-top{
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+  font-weight: 300;
+  font-size: 26rpx;
+}
+.m-tip{
+  font-size:20rpx;
+  font-weight: 300;
+}
+.m-desc{
+  font-size:24rpx;
+  line-height: 50rpx;
+  /* padding: 0 30rpx;
+  width: calc(100% - 60rpx); */
+}

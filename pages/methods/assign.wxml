@@ -1,0 +1,19 @@
+<nav-bar pageName="各种赋值" />
+<view class="page-hunger">
+  <view class="m-desc mt-30">单值赋值<text class="m-tip"> model双向绑定暂不支持多层属性</text></view>
+  <view class="m-card-normal">
+    <view>val值：{{val}}</view>
+    <view class="m-btn mt-30" bindtap="btn1">赋值1</view>
+    <view class="m-btn mt-10" bindtap="btn2">赋值2</view>
+    <view mt-10><input placeholder="赋值3" model:value="{{val}}"/></view>
+  </view>
+
+  <view class="m-desc mt-30">复杂值赋值</view>
+  <view class="m-card-normal">
+    <view>a.val值：{{a.val}}</view>
+    <view class="m-btn mt-30" bindtap="btn3">赋值1</view>
+    <view class="m-btn mt-10" bindtap="btn4">赋值2</view>
+    <!-- inputChange函数在common.js中 -->
+    <view mt-10><input placeholder="赋值3" bindinput="inputChange" data-name="a.val"/></view>
+  </view>
+</view>

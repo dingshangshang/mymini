@@ -1,0 +1,100 @@
+{
+  "id": "2326391",
+  "name": "minetest",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "自己常用测试图标",
+  "glyphs": [
+    {
+      "icon_id": "4889786",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "7674925",
+      "name": "展开",
+      "font_class": "zhankai",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "1424269",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "1351",
+      "name": "向下",
+      "font_class": "xiangxia",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "258555",
+      "name": "编辑",
+      "font_class": "edit",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "1505688",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "4551253",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "6204091",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7316261",
+      "name": "减号",
+      "font_class": "jianhao1",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "13191371",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "13604675",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "1307458",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "9568049",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    }
+  ]
+}

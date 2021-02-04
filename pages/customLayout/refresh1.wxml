@@ -1,0 +1,11 @@
+<layout id="layout" pageName="刷新与加载" refresh="{{true}}" bindinit="init" bindloadmore="loadmore" haveloadMore="{{true}}" refreshPosition="{{1}}">
+  <view slot="slotbody">
+    <view class="page">
+      <view class="m-card mt-30" wx:for="{{list}}">
+        <view>标题：{{item.name}}</view>
+        <view>简介：{{item.intro}}</view>
+        <view>描述：{{item.desc}}</view>
+      </view>
+    </view>
+  </view>
+</layout>

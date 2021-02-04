@@ -1,0 +1,18 @@
+<view class="m-modal" wx:if="{{modal.show}}">
+  <view class="modal-dialog" style='height:{{(modal.height)?modal.height:modalDefault.height}}'>
+    <view class="modal-header">
+      {{modal.title}}
+      <view class="close" wx:if='{{modal.showCancel}}' bindtap="modalCancel">
+        <i class="iconfont icon-guanbi"></i>
+      </view>
+    </view>
+    <view class="modal-body">
+      <slot></slot>
+    </view>
+    <view class="modal-footer">
+      <!-- <view class='modal-cancel' style='color:{{(modal.cancelColor)?modal.cancelColor:modalDefault.cancelColor}}' wx:if='{{modal.showCancel}}' bindtap="modalCancel">{{(modal.cancelText)?modal.cancelText:modalDefault.cancelText}}</view> -->
+      <view style='color:{{(modal.confirmColor)?modal.confirmColor:modalDefault.confirmColor}}' class="m-btn"
+        bindtap="modalConfirm">{{(modal.confirmText)?modal.confirmText:modalDefault.confirmText}}</view>
+    </view>
+  </view>
+</view>

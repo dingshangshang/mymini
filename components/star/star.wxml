@@ -1,0 +1,7 @@
+<view style="display:flex;">
+  <i class="iconfont icon-xingxing {{number>=1?'active':''}}" bindtap="dian" data-number="1"></i>
+  <i class="iconfont icon-xingxing {{number>=2?'active':''}}" bindtap="dian" data-number="2"></i>
+  <i class="iconfont icon-xingxing {{number>=3?'active':''}}" bindtap="dian" data-number="3"></i>
+  <i class="iconfont icon-xingxing {{number>=4?'active':''}}" bindtap="dian" data-number="4"></i>
+  <i class="iconfont icon-xingxing {{number>=5?'active':''}}" bindtap="dian" data-number="5"></i>
+</view>

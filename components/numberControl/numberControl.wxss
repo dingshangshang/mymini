@@ -1,0 +1,29 @@
+.numberControl-frame{
+  display: flex;
+}
+.numberControl-frame input{
+  width: 90rpx;
+  text-align: center;
+  background-color: #F3F3F3;
+  height: 40rpx;
+  line-height: 40rpx;
+  min-height:40rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #1C1D1E;
+
+}
+.numberControl-frame-btn{
+  background-color: #F3F3F3;
+  width: 64rpx;
+  text-align: center;
+  margin:0 5rpx;
+  height: 40rpx;
+  min-height:40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #5C5D5E;
+}
+.numberControl-frame-btn.active{
+  background-color: #F3F3F3;
+}

@@ -1,0 +1,82 @@
+<layout bindinit="init" refresh="{{true}}" pageName="主页" showReturn="{{false}}" showHome="{{false}}"
+  refreshPosition="{{2}}">
+  <view slot="slotbody">
+    <view class="page">
+      <view class="m-tip">只是写的一些常用到的东西，可结合第三方库进行使用</view>
+      <view class="m-card-top">自定义组件运用</view>
+      <view class="m-card">
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customLayout/navBar">
+          自定义导航栏、下拉刷新、上拉加载
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customLayout/numberControll">
+         数字加减
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/modal">
+          自定义模态框
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+      </view>
+
+      <view class="m-card-top">样式运用</view>
+      <view class="m-card">
+        <view class="m-card-item" bindtap="goto" data-url="/pages/index/commonStyle">
+          常规样式
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customForm/customForm">
+          常规表单样式1
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <!-- <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customForm/customForm2">
+          常规表单样式2
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view> -->
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customCard/customCard">
+          自定义卡片
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+      </view>
+
+      <view class="m-card-top">好用的方法和写法</view>
+      <view class="m-card">
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/message">
+          错误提示、成功提示、警示框
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/assign">
+          各种赋值
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/collapse">
+          收折
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/format">
+          一些格式化
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/location">
+          获取当前定位
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/image">
+          图片流在小程序的显示<text class="m-tip"> 只有写法，没有效果</text>
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</layout>

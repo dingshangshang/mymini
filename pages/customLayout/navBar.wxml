@@ -1,0 +1,39 @@
+<layout pageName="自定义导航栏">
+  <view slot="slotbody">
+    <view class="page">
+      <view class="m-card">
+        <view class="m-card-item">
+          普通导航栏 <text class="m-tip">就不单独加页面了，当前页面就是了</text>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item">
+          主页导航栏 <text class="m-tip">就不单独加页面了，主页就是了</text>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customLayout/navBar1">
+          简易导航栏
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customLayout/navBar2">
+          内容导航栏
+          <text class="m-tip">小程序不支持slot嵌套，所以直接引用了NavBar进行使用</text>
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customLayout/refresh">
+          下拉刷新、上拉加载更多
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/customLayout/refresh1">
+          自定义导航栏与刷新结合<text class="m-tip">有时候碰到头部和内容为一体</text>
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+      </view>
+      <view class="m-desc mt-30">
+        本项目导航栏都封装到了layout组件中，如果需要单独使用，可单独引用(导航栏相关的参数一毛一样)，但是不建议，因为有些页面往下滑动的时候需要固定顶部，有些不需要，封装到layout以后更加灵活
+      </view>
+    </view>
+  </view>
+</layout>

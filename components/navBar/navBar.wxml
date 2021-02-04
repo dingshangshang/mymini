@@ -1,0 +1,24 @@
+<!--
+ * @Description: 
+ * @Author: wenshuang
+ * @Date: 2020-12-28 10:42:26
+ * @LastEditTime: 2021-02-01 13:59:21
+ * @LastEditors: wenshuang
+ * @Reference: 
+-->
+<view class="navbar custom-class" style='height:{{navHeight}}px;background-color:{{bgColor}};color:{{fontColor}};position:{{!fixed?"relative":"fixed"}}' >
+  <view class="navbar-action-wrap navbar-action-group row item-center" style='top:{{navTop}}px;'>
+      <view class="return" bindtap="navBack"><i wx:if="{{showReturn}}" class="iconfont icon-xiangzuo" ></i></view>  
+      <view class="main ml-20" bindtap="toIndex"><i wx:if="{{showHome}}" class="iconfont icon-zhuye"></i></view>
+  </view>
+  <view class='navbar-title' style='top:{{navTop}}px'>
+   <block wx:if="{{!haveContent}}">{{pageName}}</block>
+   <block wx:if="{{haveContent&&!fill}}"><slot name="slottitleNav"></slot></block>
+  </view>
+</view>
+<block wx:if="{{fill}}">
+  <slot name="slottitleNav"></slot>
+</block>
+<block wx:else>
+  <view style="height:{{navHeight}}px;width:100%;" wx:if="{{fixed}}"></view>
+</block>

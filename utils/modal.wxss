@@ -1,0 +1,80 @@
+@import "/icon/iconfont.wxss";
+/* 自定义组件认不出[class^="m-btn"] */
+.m-btn{
+  line-height: 60rpx;
+  height: 60rpx;
+  border-radius: 6rpx;
+  background-color: #F76732;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  border: none;
+  letter-spacing: 5rpx;
+}
+
+/* 模态框start */
+.m-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  color: #000000;
+}
+
+.modal-dialog {
+  height: 50rpx;
+  width: calc(100% - 30rpx * 2);
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  padding: 40rpx 30rpx;
+  border-top-right-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+}
+
+.modal-header {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #1C1D1E;
+  text-align: center;
+  position: relative;
+}
+
+.m-modal .line {
+  width: 100%;
+  border-top: dotted 2rpx #EFEFEF;
+}
+
+.modal-body {
+  margin-top: 50rpx;
+}
+
+.modal-footer {
+  margin-top: 50rpx;
+}
+
+.m-modal .modal-confirm {
+  background-color: #F76732;
+  border-radius: 10rpx;
+  width: 100%;
+  line-height: 80rpx;
+  color: #ffffff;
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 40rpx;
+  letter-spacing: 10rpx;
+}
+
+.m-modal .close {
+  position: absolute;
+  padding: 40rpx;
+  right: -30rpx;
+  top: -40rpx;
+}
+
+.m-modal .close i {
+  color: #5C5D5E;
+}
+/* 模态框end */

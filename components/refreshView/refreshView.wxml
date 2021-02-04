@@ -1,0 +1,23 @@
+<!--
+ * @Description: 
+ * @Author: wenshuang
+ * @Date: 2021-01-30 14:07:15
+ * @LastEditTime: 2021-02-01 11:18:20
+ * @LastEditors: wenshuang
+ * @Reference: 
+-->
+<scroll-view style="margin-top:{{refreshPosition==2?navHeight:0}}px;" class="message scroll-view client-pool-list" scroll-y="{{true}}"
+	lower-threshold="1" bindtouchstart="touchstart" bindtouchmove="touchmove">
+	<view class="pull-refresh {{pull.isLoading ? 'chu' : 'jin'}}" id="pull-refresh" wx:if="{{refresh}}">
+		<!-- <image class="icon-refresh z-index-1" src="{{pull.loading}}" /> -->
+		<view class="fs24 pt20 f-color-666 z-index-1">{{pull.pullText}}</view>
+	</view>
+	<slot></slot>
+	<view class="pull-refresh" wx:if="{{haveloadMore}}">
+		<view wx:if="{{!loadMore}}">没有更多数据了</view>
+		<view wx:else class="content">
+			<!-- <image class="icon-refresh z-index-1" wx:if="{{push.isLoading}}" src="{{push.loading}}" /> -->
+			<view class="fs24 f-color-666 z-index-1">{{push.pullText}}</view>
+		</view>
+	</view>
+</scroll-view>

@@ -1,0 +1,18 @@
+<nav-bar pageName="自定义卡片" />
+<view class="m-desc mt-30">填充满的page</view>
+<view class="page">
+  <view class="m-card">padding:0 30rpx,适合表单或者路由使用，例如<text class="pcolor">首页</text>上的使用</view>
+  <view class="m-card-normal mt-30">padding:0 30rpx,适合放置一些文字内容，省略省略省略省略省略省略省略省略省略省略省略省略省略</view>
+</view>
+<view class="m-desc mt-30">左右预留一点距离的page</view>
+<view class="page-hunger">
+  <view class="m-card">padding:0 30rpx,适合表单或者路由使用，例如<text class="pcolor">首页</text>上的使用</view>
+  <view class="m-card-normal mt-30">padding:0 30rpx,适合放置一些文字内容，省略省略省略省略省略省略省略省略省略省略省略</view>
+  <view class="m-card-b mt-30">
+    <view class="m-card-title">人物信息</view>
+    <view class="m-card-left-border"></view>
+    <view>
+      你打我我不怕，你就是个抹脚爬
+    </view>
+  </view>
+</view>

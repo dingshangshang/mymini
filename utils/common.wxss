@@ -1,0 +1,325 @@
+page {
+  background-color: #F3F3F3;
+  color: #555658;
+  font-family: PingFang-SC-Bold;
+  font-size: 26rpx;
+}
+
+.page {
+  width: 100%;
+}
+
+.page-hunger {
+  margin-top: 30rpx;
+  width: calc(100% - 60rpx);
+  margin-left: 30rpx;
+}
+.m-card{
+  background-color: white;
+  padding: 0 30rpx;
+}
+.m-card-normal {
+  background-color: white;
+  padding: 10rpx 30rpx;
+  line-height: 50rpx;
+}
+
+.m-card-b {
+  background-color: white;
+  position: relative;
+  padding: 30rpx 30rpx;
+  line-height: 50rpx;
+}
+
+.m-card-title {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #1C1D1E;
+}
+
+.m-card-left-border {
+  width: 4rpx;
+  height: 24rpx;
+  background: #F76732;
+  border-radius: 2rpx;
+  position: absolute;
+  top: 42rpx;
+  left: 20rpx;
+}
+
+.m-card-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  font-size: 30rpx;
+}
+
+.line {
+  width: 100%;
+  border-top: dotted 2rpx #E2E2E2;
+}
+
+[class^="m-tag"] {
+  border-radius: 6px;
+  padding: 0 10rpx;
+  color: white;
+  font-size: 22rpx;
+  background-color: #F76732;
+  height: 36rpx;
+  line-height: 36rpx;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+[class^="m-tag-free"] {
+  color: #F76732;
+  background-color: white;
+  height: 32rpx;
+  line-height: 32rpx;
+  border: 2rpx solid #F76732;
+  padding: 0 8rpx;
+}
+
+.m-tag-danger {
+  background-color: #FC011A;
+}
+
+.m-tag-free-danger {
+  border: 2rpx solid #FC011A;
+  color: #FC011A;
+  background-color: white;
+}
+
+.m-tag-confirm {
+  background-color: #F76732;
+}
+
+.m-tag-free-confirm {
+  border: 2rpx solid #F76732;
+  color: #F76732;
+  background-color: white;
+}
+.m-tag-primary {
+  background-color: #286090;
+}
+
+.m-tag-free-primary {
+  border: 2rpx solid #286090;
+  color: #286090;
+  background-color: white;
+}
+
+.m-tag-success {
+  background-color: #00B26A;
+}
+
+.m-tag-free-success{
+  border: 2rpx solid #00B26A;
+  color: #00B26A;
+  background-color: white;
+}
+[class^="m-btn"]{
+  line-height: 60rpx;
+  height: 60rpx;
+  border-radius: 6rpx;
+  background-color: #F76732;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  border: none;
+  letter-spacing: 5rpx;
+}
+[class^="m-btn-free"]{
+  background-color: white;
+  border: solid 4rpx #F76732;
+  line-height: 52rpx;
+  height: 52rpx;
+  color: #F76732;
+}
+[class^="m-btn"].normal{
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+}
+[class^="m-btn-free"].normal{
+  padding: 6rpx 16rpx;
+}
+[class^="m-btn"].mini{
+  padding: 10rpx 20rpx;
+  font-size: 20rpx;
+}
+[class^="m-btn-free"].mini{
+  padding: 6rpx 16rpx;
+}
+
+.m-btn-80,.m-btn-free-80 {
+  width: 80%;
+  margin-left: 10%;
+}
+.m-btn-confirm{
+  background-color: #F76732!important;
+  color: white!important;
+}
+.m-btn-free-confirm{
+  border: solid 4rpx #F76732!important;
+  color: #F76732!important;
+}
+.m-btn-primary{
+  background-color: #286090!important;
+  color: white!important;
+}
+.m-btn-free-primary{
+  border: solid 4rpx #286090!important;
+  color: #286090!important;
+}
+.m-btn-success{
+  background-color: #00B26A!important;
+  color: white!important;
+}
+.m-btn-free-success{
+  border: solid 4rpx #00B26A!important;
+  color: #00B26A!important;
+}
+.m-btn-danger{
+  background-color: #FC011A!important;
+  color: white!important;
+}
+.m-btn-free-danger{
+  border: solid 4rpx #FC011A!important;
+  color: #FC011A!important;
+}
+.form-control {
+  line-height: 60rpx;
+  padding: 10rpx 0;
+}
+
+.form-control-t {
+  height: 60rpx;
+}
+
+.form-control-c {
+  height: 60rpx;
+}
+
+/*  checkbox 样式  */
+/* 未选中的 背景样式 */
+checkbox .wx-checkbox-input {
+  margin-top: -4rpx;
+  width: 30rpx;
+  /* 背景的宽 */
+  height: 30rpx;
+  /* 背景的高 */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  /* border: none; */
+  /* background: #F76732; */
+  color: #F76732;
+  /* 对勾颜色 橙色 */
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 50%;
+  /* 圆角 */
+  width: 30rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 30rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 26rpx;
+  /* 对勾大小 30rpx */
+  color: #F76732;
+  /* 对勾颜色 橙色 */
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/*  重写 圆角checkbox 样式  */
+/* 未选中的 背景样式 */
+.circlecheckbox .wx-checkbox-input {
+  border-radius: 50%;
+  /* 圆角 */
+  width: 30rpx;
+  /* 背景的宽 */
+  height: 30rpx;
+  /* 背景的高 */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+.circlecheckbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+  background: #F76732;
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+.circlecheckbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 30rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 30rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 30rpx;
+  color: #fff;
+  /* 对勾颜色 白色 */
+}
+
+/* 单选按钮样式start*/
+radio .wx-radio-input {
+  width: 30rpx;
+  height: 30rpx;
+  /* border: 2rpx solid #C9CACB;  单独设置比较科学*/
+  border-radius: 100%;
+  background: none;
+}
+
+/*单选按钮选中后内部样式*/
+radio .wx-radio-input.wx-radio-input-checked {
+  border: 2rpx solid #F76732 !important;
+  background-color: white;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 50%;
+  height: 50%;
+  background: #F76732;
+  border-radius: 100%;
+  content: '';
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/* 单选按钮样式start*/
+.check-tag {
+  border: solid 2rpx #F76732;
+  padding: 4rpx 10rpx;
+  border-radius: 6rpx;
+  color: #F76732;
+}
+
+.check-tag.active {
+  color: white;
+  background-color: #F76732;
+}
+
+.m-collapses .line{
+  border-top: dotted 2rpx #fdc8b4;
+}
+.m-collapses-title{
+  padding: 0 20rpx;
+  line-height: 60rpx;
+  position: relative;
+  /* background: linear-gradient(#fdc8b4, white, white, white, white, white, white); */
+    color: #F76732;
+    font-size: 30rpx;
+    background-color:#faf5f3;
+}
+.m-collapses-title .fr{
+  right: 20rpx;
+}
+.m-collapses-content{
+  padding: 20rpx;
+  line-height: 50rpx;
+  background-color: white;
+}

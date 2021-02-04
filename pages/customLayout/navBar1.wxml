@@ -1,0 +1,10 @@
+<layout pageName="简易导航栏" showHome="{{false}}">
+  <view slot="slotbody">
+    <view class="page">
+      <view class="m-desc mt-20">1、其实就是将showHome设置为false</view>
+      <view class="m-desc">2、一定要加括号，不然它不会被识别成Boolen类型</view>
+      <view class="m-desc">3、navBar控件的showHome默认是true，可根据实际进行修改
+      </view>
+    </view>
+  </view>
+</layout>

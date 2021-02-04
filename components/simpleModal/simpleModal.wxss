@@ -1,0 +1,53 @@
+@import "/app.wxss";
+
+.xnjk-modal {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.modal-dialog {
+  width: calc(100% - 150rpx);
+  padding: 0 !important;
+  position: relative;
+  border-radius: 6rpx;
+}
+
+.modal-header {
+  height: 40rpx;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #1C1D1E;
+}
+
+.modal-body {
+  margin-top: 0rpx;
+}
+
+.modal-footer {
+  display: flex;
+  height: 90rpx;
+  margin-top: 0rpx;
+}
+
+.modal-footer view {
+  width: 50%;
+  text-align: center;
+  border-top: #F1F1F1 solid 4rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+
+}
+
+.modal-footer .surebtn {
+  border-left: #F1F1F1 solid 1rpx;
+  font-weight: 500;
+  color: #F76732;
+}
+
+.modal-footer .closebtn {
+  border-right: #F1F1F1 solid 1rpx;
+  font-weight: 500;
+  color: #C6C7C8;
+}

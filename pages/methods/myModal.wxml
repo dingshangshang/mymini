@@ -1,0 +1,5 @@
+<nav-bar pageName="模态框" />
+<view class="m-btn-success mt-30" bindtap="click1">点我打开模态框</view>
+<modal id="modal" bindsuccess='modalOperate' catchtouchmove="ture">
+  <input placeholder="输入名字" model:value="{{name}}" />
+</modal>

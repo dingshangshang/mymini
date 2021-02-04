@@ -1,0 +1,53 @@
+<nav-bar pageName="常规样式" />
+
+<view class="page">
+  <view class="m-desc mt-30">标签</view>
+  <view class="m-card-normal">
+    <view class="display-flex">
+      <view class="m-tag mr-10">正常</view>
+      <view class="m-tag-primary mr-10">正常</view>
+      <view class="m-tag-confirm mr-10">警告</view>
+      <view class="m-tag-success mr-10">成功</view>
+      <view class="m-tag-danger mr-10">危险</view>
+    </view>
+    <view class="display-flex mt-10">
+      <view class="m-tag-free mr-10">正常</view>
+      <view class="m-tag-free-primary mr-10">正常</view>
+      <view class="m-tag-free-confirm mr-10">警告</view>
+      <view class="m-tag-free-success mr-10">成功</view>
+      <view class="m-tag-free-danger mr-10">危险</view>
+    </view>
+  </view>
+  <view class="m-desc mt-30">按钮样式</view>
+  <view class="m-card-normal">
+    <view class="m-btn">100%按钮</view>
+    <view class="m-btn-80 mt-30">80%按钮</view>
+    <view class="m-btn-free mt-30">100%按钮</view>
+    <view class="m-btn-free-80 mt-30">80%按钮</view>
+  </view>
+
+  <view class="m-desc mt-30">按钮颜色</view>
+  <view class="m-card-normal">
+    <view class="m-btn-primary mt-10">按钮</view>
+    <view class="m-btn-free-primary mt-10">按钮</view>
+    <view class="m-btn-success mt-10">按钮</view>
+    <view class="m-btn-free-success mt-10">按钮</view>
+    <view class="m-btn-danger mt-10">按钮</view>
+    <view class="m-btn-free-danger mt-10">按钮</view>
+  </view>
+  <view class="m-desc mt-30">自在的小按钮</view>
+  <view class="m-card-normal">
+    <label class="m-btn-primary normal ml-10">按钮</label>
+    <label class="m-btn-free-primary normal ml-10">按钮</label>
+    <label class="m-btn-success normal ml-10">按钮</label>
+    <label class="m-btn-free-success normal ml-10">按钮</label>
+    <label class="m-btn-danger normal ml-10">按钮</label>
+    <label class="m-btn-free-danger normal ml-10">按钮</label>
+    <label class="m-btn-confirm normal ml-10">按钮</label>
+    <label class="m-btn-free-confirm normal ml-10">按钮</label>
+  </view>
+  <view class="m-desc mt-30">mini按钮</view>
+  <view class="m-card-normal">
+    <label class="m-btn-primary mini ml-10">按钮</label> <text class="m-tip">1个例子，其他自行参考上面</text>
+  </view>
+</view>

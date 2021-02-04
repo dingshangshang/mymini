@@ -1,0 +1,24 @@
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<nav-bar pageName="一些格式化" />
+<view class="page">
+  <view class="m-tip">此处的格式化主要是在页面上现实的时候直接格式化，引用了filter.wxs</view>
+  <view class="m-tip">util.js中也有格式化函数，主要是在js文件中使用，本人觉得直接在页面上处理更方便</view>
+  <view class="m-desc mt-30">日期格式化 <text class="m-tip">ios不支持-字符</text></view>
+  <view class="m-card-normal">
+    <view>filter.formatDate(dt)：{{filter.formatDate(dt)}}</view>
+    <view>filter.formatDate(dt,'yyyy/MM/dd hh:mm:ss')：{{filter.formatDate(dt,'yyyy/MM/dd hh:mm:ss')}}</view>
+    <view>filter.formatDate(dt,'yyyy/MM/dd')：{{filter.formatDate(dt,'yyyy/MM/dd')}}</view>
+    <view>filter.formatDate(dt,'hh:mm:ss')：{{filter.formatDate(dt,'hh:mm:ss')}}</view>
+    <view>filter.formatDate(dt,'hh:mm')：{{filter.formatDate(dt,'hh:mm')}}</view>
+    <view class="m-tip">总之就是根据'yyyy/MM/dd hh:mm:ss'进行各种格式化</view>
+  </view>
+  <view class="m-desc mt-30">数字格式化</view>
+  <view class="m-card-normal">
+    <view>filter.toFix(price) ：{{filter.toFix(price)}}</view>
+    <view>filter.toFix(price,0) ：{{filter.toFix(price,0)}}</view>
+  </view>
+  <view class="m-desc mt-30">处理null字符串</view>
+  <view class="m-card-normal">
+    <view>filter.nullToEmpty("null") {{filter.nullToEmpty("null")}}</view>
+  </view>
+</view>
