@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/methods/mock",
     "pages/customForm/customForm",
     "pages/methods/myModal",
     "pages/methods/message",

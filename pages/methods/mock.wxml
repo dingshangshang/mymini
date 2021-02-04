@@ -1,0 +1,21 @@
+<nav-bar pageName="模拟数据" />
+<view class="m-tip">本页只描述用法，<text class="pcolor">pages/customLayout/refresh</text>页面获取的列表来自于模拟数据</view>
+<view class="m-card-top">1、添加文件夹和引入文件</view>
+<view class="m-card-normal">
+  <view>/mock</view>
+  <view>/utils/mock.js</view>
+</view>
+<view class="m-card-top">2、设置/utils/apiHelper.js</view>
+<view class="m-card-normal">
+  <view>
+    可到/utils/apiHelper.js下仔细查看
+  </view>
+</view>
+<view class="m-card-top">3、配置mock.js</view>
+<view class="m-card-normal">
+  在对象的mocklist数组添加一条数据，格式参考原有的那一条
+</view>
+<view class="m-card-top">4、添加存放模拟数据的文件及填充内容</view>
+<view class="m-card-normal">
+  参考例子：/mock/order_list.js
+</view>

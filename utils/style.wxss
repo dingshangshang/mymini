@@ -1,5 +1,5 @@
 .pcolor{ 
-  color: blue;
+  color: #F76732;
 }
 .display-flex{
   display:flex;

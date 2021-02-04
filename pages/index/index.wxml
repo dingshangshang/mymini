@@ -75,6 +75,11 @@
           图片流在小程序的显示<text class="m-tip"> 只有写法，没有效果</text>
           <i class="iconfont icon-xiangyou fr"></i>
         </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/mock">
+          模拟数据<text class="m-tip"> 模拟mock弄的一个</text>
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
       </view>
 
     </view>
