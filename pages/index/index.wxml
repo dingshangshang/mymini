@@ -15,7 +15,7 @@
           <i class="iconfont icon-xiangyou fr"></i>
         </view>
         <view class="line"></view>
-        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/modal">
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/myModal">
           自定义模态框
           <i class="iconfont icon-xiangyou fr"></i>
         </view>
@@ -78,6 +78,11 @@
         <view class="line"></view>
         <view class="m-card-item" bindtap="goto" data-url="/pages/methods/mock">
           模拟数据<text class="m-tip"> 模拟mock弄的一个</text>
+          <i class="iconfont icon-xiangyou fr"></i>
+        </view>
+        <view class="line"></view>
+        <view class="m-card-item" bindtap="goto" data-url="/pages/methods/timer">
+          timer<text class="m-tip"> 计时和倒计时</text>
           <i class="iconfont icon-xiangyou fr"></i>
         </view>
       </view>

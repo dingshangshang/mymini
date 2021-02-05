@@ -1,0 +1,5 @@
+<nav-bar pageName="timer" />
+<view class="m-card-top">多个计时<text class="m-tip">只需要一个的话直接调用函数即可</text></view>
+<view class="m-card" wx:for="{{list}}">
+  {{item.timer}}
+</view>

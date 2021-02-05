@@ -8,6 +8,7 @@ module.exports = {
   getDatesRange: getDatesRange,
   IsNull: IsNull,
   formatDate: formatDate,
+  getCurrentDate:getCurrentDate,
   mobileAddEmpty: mobileAddEmpty,
   numberHide: numberHide,
   getDateTimeCompare: getDateTimeCompare,
@@ -21,6 +22,18 @@ function formatDate(strDate) {
   }
   var realDate = new Date(strDate);
   var month = Number(realDate.getMonth()) > 9 ? realDate.getMonth() : "0" + realDate.getMonth();
+  var date = Number(realDate.getDate()) > 9 ? realDate.getDate() : "0" + realDate.getDate();
+  var hours = Number(realDate.getHours()) > 9 ? realDate.getHours() : "0" + realDate.getHours();
+  var minutes = Number(realDate.getMinutes()) > 9 ? realDate.getMinutes() : "0" + realDate.getMinutes();
+  return realDate.getFullYear() + "/" + month + "/" + date + " " + hours + ":" + minutes;
+}
+
+//获取当前时间，并返回字符串格式
+function getCurrentDate()
+{
+  var realDate = new Date();
+  var month=realDate.getMonth()+1; //月份是根据索引来的
+  var month = Number(month) > 9 ? month: "0" + month;
   var date = Number(realDate.getDate()) > 9 ? realDate.getDate() : "0" + realDate.getDate();
   var hours = Number(realDate.getHours()) > 9 ? realDate.getHours() : "0" + realDate.getHours();
   var minutes = Number(realDate.getMinutes()) > 9 ? realDate.getMinutes() : "0" + realDate.getMinutes();

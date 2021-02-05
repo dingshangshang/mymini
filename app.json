@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/methods/timer",
     "pages/index/index",
     "pages/methods/mock",
     "pages/customForm/customForm",

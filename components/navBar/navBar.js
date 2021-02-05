@@ -83,7 +83,7 @@ Component({
     },
     //回主页
     toIndex: function () {
-      wx.navigateTo({
+      wx.redirectTo({
         url: '/pages/index/index'
       })
     },

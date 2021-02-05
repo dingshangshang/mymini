@@ -47,7 +47,8 @@ Component({
         cancelColor: '',
         confirmText: '',
         confirmColor: '',
-        clickClose: true
+        clickClose: true,
+        haveBtn:''
       }
     }
   },
@@ -64,7 +65,8 @@ Component({
       cancelColor: '#000000',
       confirmText: '确定',
       confirmColor: 'white',
-      clickClose: true
+      clickClose: true,
+      haveBtn:true
     }
   },
   
